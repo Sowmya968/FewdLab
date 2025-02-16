@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    
+    <!-- Local Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-center text-primary">Feedback Form</h2>
+        
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name (optional):</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email (optional):</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone (optional):</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Rating:</label>
+                <div class="d-flex justify-content-between">
+                    <div class="form-check">
+                        <label class="form-check-label">1</label>
+                        <input class="form-check-input" type="radio" name="rating" value="1" placeholder="1">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">2</label>
+                        <input class="form-check-input" type="radio" name="rating" value="2" placeholder="2">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">3</label>
+                        <input class="form-check-input" type="radio" name="rating" value="3" placeholder="3">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">4</label>
+                        <input class="form-check-input" type="radio" name="rating" value="4" placeholder="4">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">5</label>
+                        <input class="form-check-input" type="radio" name="rating" value="5" placeholder="5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="questions" class="form-label">Any Questions regarding product or service:</label>
+                <textarea class="form-control" id="questions" name="questions" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="comments" class="form-label">Additional Comments (optional):</label>
+                <textarea class="form-control" id="comments" name="comments" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">Submit</button>
+        </form>
+    </div>
+
+    <!-- Local Bootstrap JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+
+    <!-- Link External CSS -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="title">Feedback Form</h2>
+        
+        <form>
+            <div class="form-group">
+                <label for="name">Name (optional):</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email (optional):</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone (optional):</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label>Rating:</label>
+                <div class="rating">
+                    <label><input type="radio" name="rating" value="1"> 1</label>
+                    <label><input type="radio" name="rating" value="2"> 2</label>
+                    <label><input type="radio" name="rating" value="3"> 3</label>
+                    <label><input type="radio" name="rating" value="4"> 4</label>
+                    <label><input type="radio" name="rating" value="5"> 5</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="questions">Any Questions regarding product or service:</label>
+                <textarea id="questions" name="questions" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments (optional):</label>
+                <textarea id="comments" name="comments" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
