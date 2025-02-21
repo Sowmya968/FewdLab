@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: white;
+        }
+        header {
+            background: #1DB954;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .search-container {
+            margin: 20px;
+        }
+        input {
+            padding: 10px;
+            width: 60%;
+            border-radius: 5px;
+            border: none;
+        }
+        .songs-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .song {
+            background: #222;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 200px;
+        }
+        button {
+            background: #1DB954;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #17a74c;
+        }
+    </style>
+</head>
+<body>
+
+    <header>🎵 My Music App 🎵</header>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search for songs...">
+        <button onclick="searchSong()">Search</button>
+    </div>
+
+    <div class="songs-container">
+        <div class="song">
+            <p>Song Title: <b>Shape of You</b></p>
+            <p>Artist: Ed Sheeran</p>
+            <button onclick="playSong()">▶ Play</button>
+        </div>
+        <div class="song">
+            <p>Song Title: <b>Blinding Lights</b></p>
+            <p>Artist: The Weeknd</p>
+            <button onclick="playSong()">▶ Play</button>
+        </div>
+    </div>
+
+    <script>
+        function searchSong() {
+            alert("Search function will be implemented soon!");
+        }
+        function playSong() {
+            alert("Playing song...");
+        }
+    </script>
+
+</body>
+</html>
